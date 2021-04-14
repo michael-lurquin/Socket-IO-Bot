@@ -7,6 +7,8 @@ if ( args.length !== 1 ) {
 }
 else url = args[0]
 
+console.log('[' + getCurrentDate() + '][URL]: ' + url)
+
 let app = require('express')
 let server = require('http').Server(app)
 let io = require('socket.io')(server, {
