@@ -578,3 +578,27 @@ http://live.local/api/pages/import-api/presences/status
 [2021-04-14 16:13:29] Leave room: import-api, socket: vVxufbxDa_NBNSOyAABX, user: sambhav jain
 [2021-04-14 16:13:29] Users: 0
 [2021-04-14 16:13:29][QUERY] Log created with ID: OK
+[2021-04-15 10:38:07] Socket already connected: PdP9yBxhC-4uifhcAAAA
+[2021-04-15 10:38:08] Join room: import-api, socket: PdP9yBxhC-4uifhcAAAA, user: sambhav jain
+[2021-04-15 10:38:08] Users: 1
+[2021-04-15 10:45:41] Join room: import-api, socket: Rp6O0LdJQ-VaSvuZAAAB, user: sambhav jain
+[2021-04-15 10:45:41] Users: 1
+[2021-04-15 10:45:41][QUERY] Log created: OK
+[2021-04-15 10:46:18] Leave room: import-api, socket: Rp6O0LdJQ-VaSvuZAAAB, user: sambhav jain
+[2021-04-15 10:46:18] Users: 0
+[2021-04-15 10:46:19][QUERY] Log created: OK
+[2021-04-15 10:47:19] Join room: import-api, socket: QmcRiwgBiRXohvV2AAAC, user: sambhav jain
+[2021-04-15 10:47:19] Users: 1
+[2021-04-15 10:47:19][QUERY] Log created: OK
+[2021-04-15 10:52:27] Join room: import-api, socket: 2YPsTeXftaZhFl2XAAAD, user: Christine Hutchinson
+[2021-04-15 10:52:27] Users: 2
+[2021-04-15 10:52:27][QUERY] Log created: OK
+[2021-04-15 10:52:29] Leave room: import-api, socket: 2YPsTeXftaZhFl2XAAAD, user: Christine Hutchinson
+[2021-04-15 10:52:29] Users: 1
+[2021-04-15 10:52:29][QUERY] Log created: OK
+[2021-04-15 10:52:36] Join room: import-api, socket: l17iWB--vEZACgvQAAAE, user: Christine Hutchinson
+[2021-04-15 10:52:36] Users: 2
+[2021-04-15 10:52:36][QUERY] Log created: OK
+[2021-04-15 10:53:11] Leave room: import-api, socket: l17iWB--vEZACgvQAAAE, user: Christine Hutchinson
+[2021-04-15 10:53:11] Users: 1
+[2021-04-15 10:53:11][QUERY] Log created: OK

@@ -9,21 +9,18 @@ else url = args[0]
 
 console.log('[' + getCurrentDate() + '][URL]: ' + url)
 
-let app = require('express')
+let app = require('express')()
+let fs = require('fs')
+let https = require('https')
+let util = require('util')
 let server = require('http').Server(app)
+
 let io = require('socket.io')(server, {
-	allowEIO3: true,
-	cors: {
-		origin: url,
-		methods: ['GET', 'POST'],
-		credentials: true
-	}
+	allowEIO3: true
 })
 let axios = require('axios')
 
 // Log
-let fs = require('fs')
-let util = require('util')
 let log_file = fs.createWriteStream(__dirname + '/debug.log', {flags: 'a'})
 let log_stdout = process.stdout
 
@@ -75,10 +72,17 @@ function postQuery(user, online, socket, pageSlug) {
 	try {
 		let endpoint = url + '/api/pages/{page}/presences/status'.replace('{page}', pageSlug)
 
-		axios.post(endpoint, {
-			user: user,
-			online: online,
-			socket: socket
+		axios({
+			url: endpoint,
+			method: 'POST',
+			httpsAgent: new https.Agent({
+			    rejectUnauthorized: false
+			}),
+			data: {
+				user: user,
+				online: online,
+				socket: socket
+			}
 		}).then(response => {
 			console.log('[' + getCurrentDate() + '][QUERY] Log created: ' + response.data)
 		}).catch(error => {
